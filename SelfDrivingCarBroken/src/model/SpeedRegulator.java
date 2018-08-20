@@ -2,8 +2,13 @@ package model;
 
 import ui.SelfDrivingCar;
 
+import java.util.List;
+
 public class SpeedRegulator {
 
+    private Engine engine;
+    private List<Brake> brakes;
+    private Speedometer speedometer;
     private int intendedSpeed;
 
     public SpeedRegulator(SelfDrivingCar car) {
